@@ -16,11 +16,11 @@ end
 
 # end
 
-def sum_of_3_or_5_multiples(final_number)
+def sum_of_3_or_5_multiples?(final_number)
   
     final_sum=0
     
-      if final_number is_i?(Fixnum) && final_number >= 0
+      if (final_number)is_i?(Fixnum) && final_number >= 0
   
         0.upto(final_number-1) do |current_number|
             if is_multiple_of_3_or_5? (current_number) == true 
@@ -32,3 +32,4 @@ def sum_of_3_or_5_multiples(final_number)
       end
     return final_sum
   end 
+
